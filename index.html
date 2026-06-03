@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Details</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.title{
+    font-size:32px;
+    font-weight:bold;
+    color:#1b1b1b;
+    margin-bottom:20px;
+}
+
+.table-box{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#001B50;
+    color:white;
+}
+
+thead th{
+    padding:18px;
+    text-align:left;
+    font-size:20px;
+}
+
+tbody td{
+    padding:20px;
+    font-size:18px;
+    color:#001B50;
+    vertical-align:middle;
+}
+
+tbody tr:hover{
+    background:#f2f8f4;
+}
+
+.student-image{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border-radius:8px;
+    border:2px solid #ddd;
+}
+
+@media(max-width:768px){
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+thead th,
+tbody td{
+    font-size:15px;
+    padding:12px;
+}
+
+.student-image{
+    width:70px;
+    height:70px;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h2 class="title">Student's Details</h2>
+
+<div class="table-box">
+
+<table>
+<thead>
+<tr>
+<th>SL. No</th>
+<th>Name</th>
+<th>Branch Name</th>
+<th>Course Name</th>
+<th>Image</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1.</td>
+<td>SUMANTA GHOSH</td>
+<td>EL Computer Online</td>
+<td>Diploma in Computer Hardware & Networking(DCHN)</td>
+<td>
+<img src="certificate.jpg" alt="Certificate" class="student-image">
+</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
